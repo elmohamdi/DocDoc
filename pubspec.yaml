@@ -1,0 +1,43 @@
+name: doc_advance
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+    # The following adds the Cupertino Icons font to your application.
+    # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  # State management
+  flutter_bloc: ^9.1.1
+  # Code generation (mainly used for bloc)
+  freezed: ^3.2.5
+  freezed_annotation: ^3.1.0
+  # Dependency injection
+  get_it: ^9.2.1
+  # Classes and helper functions that support JSON code generation via the `json_serializable` package.
+  json_annotation: ^4.11.0
+   # Networking
+  dio: ^5.9.2
+  retrofit: ^4.9.2
+  retrofit_generator: ^10.2.5
+  pretty_dio_logger: ^1.4.0
+  # Localization
+  intl: ^0.20.2
+  easy_localization: ^3.0.8
+  # Splash screen
+  flutter_native_splash: ^2.4.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  # automatically generate code for converting to/from json and for the freezed package
+  json_serializable: ^6.13.1
+
+flutter:
+  uses-material-design: true
