@@ -31,6 +31,10 @@ dependencies:
   easy_localization: ^3.0.8
   # Splash screen
   flutter_native_splash: ^2.4.7
+  # Svg support
+  flutter_svg: ^2.2.4
+  # Screen util for responsive design
+  flutter_screenutil: ^5.9.3
 
 dev_dependencies:
   flutter_test:
@@ -41,3 +45,7 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/svgs/
+    - assets/fonts/
