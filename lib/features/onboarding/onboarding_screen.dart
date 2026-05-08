@@ -21,16 +21,16 @@ class OnboardingScreen extends StatelessWidget {
                 SizedBox(height: 30.h),
                 const DoctorImageAndText(),
                 Padding(
-                  padding:  EdgeInsets.symmetric(horizontal: 30.w),
+                  padding: EdgeInsets.symmetric(horizontal: 30.w),
                   child: Column(
                     children: [
-                     Text(
+                      Text(
                         'Manage and schedule all of your medical appointments easily with Docdoc to get a new experience.',
-                        style: TextStyles.font12gray400weight,
+                        style: TextStyles.font12grayRegular,
                         textAlign: TextAlign.center,
                       ),
-                      SizedBox(height: 30.h,),
-                    const GetStartedButton(),
+                      SizedBox(height: 30.h),
+                      const GetStartedButton(),
                     ],
                   ),
                 ),
