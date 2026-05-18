@@ -1,7 +1,6 @@
 import 'package:doc_advance/core/helpers/spacing.dart';
 import 'package:doc_advance/core/theming/styles.dart';
 import 'package:doc_advance/core/widgets/app_text_button.dart';
-import 'package:doc_advance/features/login/data/models/login_request_body.dart';
 import 'package:doc_advance/features/login/logic/cubit/login_cubit.dart';
 import 'package:doc_advance/features/login/presentation/widgets/dont_have_account_text.dart';
 import 'package:doc_advance/features/login/presentation/widgets/email_and_password.dart';
