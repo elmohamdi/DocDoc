@@ -42,6 +42,7 @@ dev_dependencies:
   flutter_lints: ^6.0.0
   # automatically generate code for converting to/from json and for the freezed package
   json_serializable: ^6.13.1
+  build_runner: ^2.15.0
 
 flutter:
   uses-material-design: true
