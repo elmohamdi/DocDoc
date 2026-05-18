@@ -7,4 +7,6 @@ class ColorManager {
   static const Color lightGray = Color(0xFFC2C2C2);
   static const Color darkBlue = Color(0xFF242424);
   static const Color moreLightGray = Color(0xffFDFDFF);
+
+  static Color? get mainBlue => null;
 }

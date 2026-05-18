@@ -1,11 +1,9 @@
 import 'package:doc_advance/core/netowrking/api_result.dart';
 import 'package:doc_advance/features/login/data/models/login_request_body.dart';
-import 'package:doc_advance/features/login/data/models/login_response.dart';
 import 'package:doc_advance/features/login/data/repos/login_repo.dart';
 import 'package:doc_advance/features/login/logic/cubit/login_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:doc_advance/core/netowrking/api_error_handler.dart';
 
 class LoginCubit extends Cubit<LoginState> {
   final LoginRepo _loginRepo;
@@ -13,12 +11,17 @@ class LoginCubit extends Cubit<LoginState> {
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
   final formKey = GlobalKey<FormState>();
-  void emitLoginState(LoginRequestBody loginRequestBody) async {
+  void emitLoginState() async {
     emit(const LoginState.loading());
-    final response = await _loginRepo.login(loginRequestBody);
+    final response = await _loginRepo.login(
+      LoginRequestBody(
+        email: emailController.text,
+        password: passwordController.text,
+      ),
+    );
     response.when(
-      success: (LoginResponse) {
-        emit(LoginState.success(LoginResponse));
+      success: (loginResponse) {
+        emit(LoginState.success(loginResponse));
       },
       failure: (error) {
         emit(LoginState.error(error: error.apiErrorModel.message ?? ''));
