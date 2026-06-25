@@ -1,7 +1,7 @@
 name: doc_advance
 description: "A new Flutter project."
 publish_to: 'none'
-version: 0.1.0+1
+version: 0.1.2+1
 
 environment:
   sdk: ^3.11.0
@@ -31,6 +31,11 @@ dependencies:
   easy_localization: ^3.0.8
   # Splash screen
   flutter_native_splash: ^2.4.7
+  # Svg support
+  flutter_svg: ^2.2.4
+  # Screen util for responsive design
+  flutter_screenutil: ^5.9.3
+  firebase_core: ^4.9.0
 
 dev_dependencies:
   flutter_test:
@@ -38,6 +43,11 @@ dev_dependencies:
   flutter_lints: ^6.0.0
   # automatically generate code for converting to/from json and for the freezed package
   json_serializable: ^6.13.1
+  build_runner: ^2.15.0
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/svgs/
+    - assets/fonts/
