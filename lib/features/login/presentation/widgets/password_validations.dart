@@ -1,5 +1,5 @@
 import 'package:doc_advance/core/helpers/spacing.dart';
-import 'package:doc_advance/core/theming/colors.dart';
+import 'package:doc_advance/core/theming/color_manager.dart';
 import 'package:doc_advance/core/theming/styles.dart';
 import 'package:flutter/material.dart';
 

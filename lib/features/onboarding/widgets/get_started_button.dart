@@ -1,6 +1,6 @@
 import 'package:doc_advance/core/helpers/extensions.dart';
 import 'package:doc_advance/core/routing/routes.dart';
-import 'package:doc_advance/core/theming/colors.dart';
+import 'package:doc_advance/core/theming/color_manager.dart';
 import 'package:doc_advance/core/theming/styles.dart';
 import 'package:doc_advance/features/login/presentation/login_screen.dart';
 import 'package:flutter/material.dart';
