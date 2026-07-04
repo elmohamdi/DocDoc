@@ -90,4 +90,9 @@ class TextStyles {
     fontWeight: FontWeightHelper.medium,
     color: ColorManager.darkBlue,
   );
+  static TextStyle font18WhiteMedium = TextStyle(
+    fontWeight: FontWeightHelper.medium,
+    color: Colors.white,
+    fontSize: 18.sp,
+  );
 }
