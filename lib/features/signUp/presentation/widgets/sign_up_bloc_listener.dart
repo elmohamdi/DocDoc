@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/routing/routes.dart';
-import '../../../../core/theming/colors.dart';
+import '../../../../core/theming/color_manager.dart';
 import '../../../../core/theming/styles.dart';
 
 class SignupBlocListener extends StatelessWidget {
