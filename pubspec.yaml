@@ -36,6 +36,7 @@ dependencies:
   # Screen util for responsive design
   flutter_screenutil: ^5.9.3
   firebase_core: ^4.9.0
+  shared_preferences: ^2.5.5
 
 dev_dependencies:
   flutter_test:
