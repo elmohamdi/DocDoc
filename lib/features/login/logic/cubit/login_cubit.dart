@@ -1,4 +1,4 @@
-import 'package:doc_advance/core/netowrking/api_result.dart';
+import 'package:doc_advance/core/networking/api_result.dart';
 import 'package:doc_advance/features/login/data/models/login_request_body.dart';
 import 'package:doc_advance/features/login/data/repos/login_repo.dart';
 import 'package:doc_advance/features/login/logic/cubit/login_state.dart';

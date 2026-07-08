@@ -1,4 +1,4 @@
-import 'package:doc_advance/core/netowrking/api_result.dart';
+import 'package:doc_advance/core/networking/api_result.dart';
 import 'package:doc_advance/features/signUp/data/models/sign_up_request_body.dart';
 import 'package:doc_advance/features/signUp/data/repos/sign_up_repo.dart';
 import 'package:doc_advance/features/signUp/logic/cubit/sign_up_state.dart';

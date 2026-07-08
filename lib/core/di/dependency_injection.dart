@@ -1,6 +1,8 @@
 import 'package:dio/dio.dart';
-import 'package:doc_advance/core/netowrking/api_service.dart';
-import 'package:doc_advance/core/netowrking/dio_factory.dart';
+import 'package:doc_advance/core/networking/api_service.dart';
+import 'package:doc_advance/core/networking/dio_factory.dart';
+import 'package:doc_advance/features/home/data/apis/home_api_service.dart';
+import 'package:doc_advance/features/home/data/repos/home_repo.dart';
 import 'package:doc_advance/features/login/data/repos/login_repo.dart';
 import 'package:doc_advance/features/signUp/data/repos/sign_up_repo.dart';
 import 'package:doc_advance/features/signUp/logic/cubit/sign_up_cubit.dart';
@@ -21,4 +23,7 @@ Future<void> setupGetIt() async {
   //SignUp
   getIt.registerLazySingleton<SignupRepo>(() => SignupRepo(getIt()));
   getIt.registerFactory<SignupCubit>(() => SignupCubit(getIt()));
+  //Home
+  getIt.registerLazySingleton<HomeApiService>(() => HomeApiService(dio));
+  getIt.registerLazySingleton<HomeRepo>(() => HomeRepo(getIt()));
 }

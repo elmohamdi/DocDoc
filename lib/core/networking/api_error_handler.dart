@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:doc_advance/core/netowrking/api_error_model.dart';
+import 'package:doc_advance/core/networking/api_error_model.dart';
 
 import 'api_constants.dart';
 
@@ -163,7 +163,9 @@ ApiErrorModel _handleError(DioException error) {
       if (error.response != null &&
           error.response?.statusCode != null &&
           error.response?.statusMessage != null) {
-        return ApiErrorModel.fromJson(error.response!.data);
+        return ApiErrorModel.fromJson(
+          error.response!.data as Map<String, dynamic>,
+        );
       } else {
         return DataSource.DEFAULT.getFailure();
       }

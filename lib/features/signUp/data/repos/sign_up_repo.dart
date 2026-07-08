@@ -1,6 +1,6 @@
-import 'package:doc_advance/core/netowrking/api_error_handler.dart';
-import 'package:doc_advance/core/netowrking/api_result.dart';
-import 'package:doc_advance/core/netowrking/api_service.dart';
+import 'package:doc_advance/core/networking/api_error_handler.dart';
+import 'package:doc_advance/core/networking/api_result.dart';
+import 'package:doc_advance/core/networking/api_service.dart';
 import 'package:doc_advance/features/signUp/data/models/sign_up_request_body.dart';
 import 'package:doc_advance/features/signUp/data/models/sign_up_response.dart';
 
